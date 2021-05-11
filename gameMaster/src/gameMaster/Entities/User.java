@@ -9,14 +9,14 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private LocalDate dateOfBirth;
-	private String identityNumber;
+	private Long identityNumber;
 	
 	
 	public User() {
 		
 	}
 	
-	public User(int id, String firstName, String lastName, LocalDate dateOfBirth, String identityNumber) {
+	public User(int id, String firstName, String lastName, LocalDate dateOfBirth, Long identityNumber) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -57,11 +57,11 @@ public class User {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public String getIdentityNumber() {
+	public Long getIdentityNumber() {
 		return identityNumber;
 	}
 
-	public void setIdentityNumber(String identityNumber) {
+	public void setIdentityNumber(Long identityNumber) {
 		this.identityNumber = identityNumber;
 	}
 

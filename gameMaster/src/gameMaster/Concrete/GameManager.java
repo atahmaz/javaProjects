@@ -5,6 +5,7 @@ import gameMaster.Abstract.UserCheckService;
 import gameMaster.Entities.Campaign;
 import gameMaster.Entities.Game;
 import gameMaster.Entities.Gamer;
+import gameMaster.ServiceAdapters.MernisServiceAdapter;
 import gameMaster.ServiceAdapters.MernisServiceFakeAdapter;
 
 
@@ -13,8 +14,8 @@ public class GameManager implements GameService {
 	UserCheckService userCheckService;
 
 	
-public GameManager(MernisServiceFakeAdapter mernisServiceFakeAdapter) {
-		this.userCheckService=mernisServiceFakeAdapter;
+public GameManager(MernisServiceAdapter mernisServiceAdapter) {
+		this.userCheckService=mernisServiceAdapter;
 	}
 	
 	@Override

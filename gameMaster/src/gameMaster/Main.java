@@ -9,6 +9,7 @@ import gameMaster.Entities.BlackFridayCampaign;
 import gameMaster.Entities.Game;
 import gameMaster.Entities.Gamer;
 import gameMaster.Entities.User;
+import gameMaster.ServiceAdapters.MernisServiceAdapter;
 import gameMaster.ServiceAdapters.MernisServiceFakeAdapter;
 
 public class Main {
@@ -16,24 +17,22 @@ public class Main {
 	public static void main(String[] args) {
 		
 		CampaignManager campaignManager = new CampaignManager();
-		GameManager gameManager = new GameManager(new MernisServiceFakeAdapter());
+		GameManager gameManager = new GameManager(new MernisServiceAdapter());
 		UserManager userManager = new UserManager();
 		
 		
-		
-		
 		Gamer gamer1= new Gamer(1,100);
-		gamer1.setFirstName("Ayça");
-		gamer1.setLastName("Ataş");
+		gamer1.setFirstName("AYÇA");
+		gamer1.setLastName("TAHMAZ");
 		gamer1.setDateOfBirth(LocalDate.of(1994, 05, 07));
-		gamer1.setIdentityNumber("11111111111");
+		gamer1.setIdentityNumber(111111111111L);
 		
 	
 		Gamer gamer2= new Gamer(1,100);
 		gamer2.setFirstName("Cantürk");
 		gamer2.setLastName("Ataş");
 		gamer2.setDateOfBirth(LocalDate.of(1994, 11, 03));
-		gamer2.setIdentityNumber("11111111112");
+		gamer2.setIdentityNumber(11111111112L);
 		
 		User[] users = {gamer1,gamer2};
 		
