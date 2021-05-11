@@ -10,7 +10,7 @@ import gameMaster.Entities.Game;
 import gameMaster.Entities.Gamer;
 import gameMaster.Entities.User;
 import gameMaster.ServiceAdapters.MernisServiceAdapter;
-import gameMaster.ServiceAdapters.MernisServiceFakeAdapter;
+
 
 public class Main {
 
@@ -22,10 +22,11 @@ public class Main {
 		
 		
 		Gamer gamer1= new Gamer(1,100);
-		gamer1.setFirstName("AYÇA");
+		gamer1.setFirstName("AYÇA AYŞEN");
 		gamer1.setLastName("TAHMAZ");
 		gamer1.setDateOfBirth(LocalDate.of(1994, 05, 07));
-		gamer1.setIdentityNumber(111111111111L);
+		gamer1.setIdentityNumber(24970828358L);
+		gamer1.setMoney(300);
 		
 	
 		Gamer gamer2= new Gamer(1,100);

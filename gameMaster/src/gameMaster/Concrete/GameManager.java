@@ -6,7 +6,7 @@ import gameMaster.Entities.Campaign;
 import gameMaster.Entities.Game;
 import gameMaster.Entities.Gamer;
 import gameMaster.ServiceAdapters.MernisServiceAdapter;
-import gameMaster.ServiceAdapters.MernisServiceFakeAdapter;
+
 
 
 public class GameManager implements GameService {
