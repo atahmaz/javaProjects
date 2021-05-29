@@ -27,5 +27,7 @@ public class JobTitlesControllers {
 		
 		return this.jobTitleService.getAll();
 	}
+	
+	
 
 }
